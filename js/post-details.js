@@ -89,7 +89,7 @@ function callIntersection() {
   const searchParams = new URLSearchParams(window.location.search);
   const postId = searchParams.get('id');
 
-  fetch('../data.json')
+  fetch('./data.json')
     .then((response) => {
       return response.json();
     })

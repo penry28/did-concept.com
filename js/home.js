@@ -23,7 +23,7 @@ const oldValue = {
 };
 
 async function loadData() {
-  const response = await fetch('../data.json');
+  const response = await fetch('./data.json');
   data = await response.json();
 
   return Promise.resolve();
